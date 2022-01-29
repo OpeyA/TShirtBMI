@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Body Mass Index Calculator</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/project8style.css">
+    <script src="script.js"></script>
+    <link
+    rel="stylesheet"
+    href="jquery-ui-1.12.0.custom/jquery-ui.theme.css"
+  />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+  rel="stylesheet"
+  />
+    <script src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.1/jquery.validate.min.js"></script>
+    <script src="https://it411ajaxbmi8c2e.blob.core.windows.net/it411/BMICalcHelper.js"></script>
+  </head>
+  <body>
+    <a href="../home.html"><img src="images/sftwear.png" alt="" /></a>
+    <h2>Fauzeeat(Ope) Animashaun</h2>
+    <hr />
+    <article>
+    <nav id="menu">
+      <ul>
+        <li><a href="#imperial">Imperial</a></li>
+        <li><a href="#metric">Metric</a></li>
+      </ul>
+      <!-- This is the Imperial calculator form -->
+      <form id="imperial">
+        <h2 class="title">Imperial</h2>
+        <span>Please fill in the details below:</span>
+        <br>
+        <br>
+        <label for="feet" class="label"></label>
+        <input type="text" size="4" name="feet" id="feet" class="required" placeholder="Feet" /><span class="measure">(ft)</span>
+        <input type="text" size="6" name="inches" id="inches" class="required" placeholder="Inches"/><span class="measure">(in)</span>
+        <br />
+        <label for="pounds" class="label"></label>
+        <input type="text" size="8" name="pounds" id="pounds" class="required" placeholder="Pounds"/><span class="measure">(lbs)</span>
+        <br/>
+        <button type="submit" id="computeImp">Calculate</button>
+        <br/>
+        <label for="impBMI" class="res"></label>
+        <input size="6" name="impBMI" id="impBMI" class="impBMI"  placeholder="BMI" disabled>
+        </form>
+        <!-- This is the metric calculator form -->
+        <form id="metric">
+          <h2 class="title">Metric</h2>
+          <span>Please fill in the details below:</span>
+          <br>
+          <br>
+          <label for="centimeters" class="label"></label>
+          <input type="text" size="10" name="centimeters" id="centimeters" class="required" placeholder="Centimeters" /><span class="measure">(cm)</span>
+          <br />
+          <label for="kilograms" class="label"></label>
+          <input type="text" size="10" name="Kilograms" id="kilograms" class="required"  placeholder="Kilograms"/><span class="measure">(kg)</span>
+          <br/>
+          <button type="submit" id="computeMet">Calculate</button>
+          <br/>
+          <label for="metBMI" class="res"></label>
+          <input size="6" name="metBMI" id="metBMI" class="metBMI" placeholder="BMI" disabled>
+          <p class="test"></p>
+      </form>
+    </nav>
+    <!-- The box with the legend of BMI categories -->
+    <div class="categories">
+      <p>BMI Categories:</p>
+      <ul>
+        <li>Underweight &lt;= 18.5</li>
+        <li>Normal Weight = 18.5-24.9</li>
+        <li>Overweight = 25-29.9</li>
+        <li>Obesity =&gt; 30</li>
+      </ul>
+      </div>
+      <!-- The image of the t shirt -->
+   <figure class="frame">
+     <img class="tshirt" src="images/tshirt2.jpg" alt="tshirt">
+     <figcaption class="caption"></figcaption>
+   </figure>
+   <!-- Option button with text to change the color -->
+    <div class="option" id="change">
+    <p>Check out the t-shirt in black! Hover over the shirt to change back to white</p>
+    <button type="submit" id="color">Change Color</button>
+    </div>
+  </article>
+  </body>
+</html>

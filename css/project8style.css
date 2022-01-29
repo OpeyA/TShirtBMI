@@ -1,0 +1,172 @@
+/*stylesheet for Project 8 */
+body {
+  background-color: #23023fa2;
+  width: 100vw;
+  height: 100vh;
+}
+article{
+  position: relative;
+}
+
+nav {
+  width: 39em;
+  margin: 2em 8em 0 auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  flex: 0 1 50%;
+  text-align: center;
+}
+
+.res {
+  margin: 18.5%;
+}
+
+
+.categories {
+  position: fixed;
+  margin-top: -32.75em;
+  width: 20%;
+  background-color: rgb(110, 73, 73);
+  box-shadow: 2px 2px 2px black;
+}
+
+
+.categories ul {
+  display: flex;
+  flex-flow:wrap;
+}
+
+.categories ul li{
+  flex:0 1 100%;
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 0;
+}
+
+.categories ul li:first-of-type{
+  color: rgb(180, 219, 180);
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.categories ul li:nth-child(2) {
+  color: rgb(83, 100, 52);
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.categories p {
+  flex: 0 1 100%;
+  background-color: rgba(60, 179, 114, 0.884);
+  text-shadow: 0.5px 0.5px 0.5px black;
+  text-align: center;
+}
+
+.categories ul li:nth-child(3) {
+  color: blanchedalmond;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.categories ul li:last-of-type {
+  color: rgb(128, 5, 5);
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 0.35em;
+}
+
+nav > * {
+  margin: 2em 6.5em;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+h2::before {
+  content: "\2764 ";
+}
+button {
+  width: 25%;
+  margin: 1em 35%;
+  background-color: rgba(34, 34, 102, 0.89);
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:focus {
+  background-color: rgba(34, 34, 102, 0.699);
+}
+label {
+  line-height: .5em;
+  color: darkolivegreen;
+  font-size: 0.7em;
+  text-align: center;
+  text-shadow: 0 0 7px #810712, 0 0 10px #ff0116, 0 0 21px #85000b,
+    0 0 42px rgb(194, 231, 219), 0 0 82px rgb(194, 231, 219),
+    0 0 92px rgb(194, 231, 219), 0 0 102px rgb(194, 231, 219),
+    0 0 151px rgb(194, 231, 219);
+}
+
+form {
+  filter: grayscale(40%) contrast(95%);
+  padding: 1em;
+}
+
+.caption {
+  position: absolute;
+  font-size: 1.2em;
+  text-align: center;
+  color: #f8522d;
+  font-family: "Permanent Marker", cursive;
+}
+.caption::after {
+  content: " \263A";
+}
+
+figure {
+  position: relative;
+  width: fit-content;
+  margin-left: 30em;
+  margin-top: 2em;
+  overflow: hidden;
+  opacity: 0;
+}
+
+figure img {
+  width: 27em;
+  align-items: center;
+
+}
+
+figcaption {
+  width:12.5em;
+  margin-top: -13em;
+  margin-left: 5em;
+}
+span.measure {
+  font-size: 0.75em;
+  padding-left: 0em;
+}
+span{
+  padding: 2em 4.5em;
+}
+#change{
+  opacity: 0;
+}
+.option p{
+  width:fit-content;
+  margin-left: 40em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: .75em;
+}
+.option button{
+  width: fit-content;
+  margin-left: 50em;
+}
